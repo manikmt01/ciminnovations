@@ -1,0 +1,150 @@
+/* === landing page start === */
+
+.cbtn-login {
+  display: inline-flex;
+  height: 44px;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 1.3px solid #d5f8cf;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+  color: #d5f8cf;
+  text-align: center;
+  cursor: pointer;
+ transition: background 0.4s ease-in-out, color 0.4s ease-in-out, box-shadow 0.4s ease-in-out, border 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+.cbtn-login:hover {
+  background: var(
+    --Test-SS-gradient,
+    radial-gradient(102.84% 135.6% at 0% 88.39%, #ed1ebb 0%, #ff0788 79.81%)
+  );
+  box-shadow: 0 2px 4px -8px rgba(98, 8, 171, 0.08),
+    0 8px 16px -8px rgba(98, 8, 171, 0.25),
+    0 24px 32px -16px rgba(81, 7, 141, 0.25),
+    0 -20px 32px 0 rgba(79, 188, 255, 0.2) inset,
+    0 8px 24px 0 rgba(234, 52, 241, 0.25) inset;
+  border: 1.3px solid transparent;
+}
+.cbtn-signup {
+  cursor: pointer;
+  display: inline-flex;
+  width: 134px;
+  height: 44px;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  background: var(
+    --Test-SS-gradient,
+    radial-gradient(102.84% 135.6% at 0% 88.39%, #ed1ebb 0%, #ff0788 79.81%)
+  );
+  box-shadow: 0 2px 4px -8px rgba(98, 8, 171, 0.08),
+    0 8px 16px -8px rgba(98, 8, 171, 0.25),
+    0 24px 32px -16px rgba(81, 7, 141, 0.25),
+    0 -20px 32px 0 rgba(79, 188, 255, 0.2) inset,
+    0 8px 24px 0 rgba(234, 52, 241, 0.25) inset;
+  font-size: 16px;
+  color: var(--color-white);
+  font-weight: 600;
+  line-height: 140%;
+ transition: background 0.4s ease-in-out, color 0.4s ease-in-out, box-shadow 0.4s ease-in-out, border 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+.cbtn-signup:hover {
+  background: white;
+  color: var(--color-text);
+}
+.hero-button-one {
+  display: inline-flex;
+  min-width: 295px;
+  max-height: 59px;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 8px;
+transition: background 0.4s ease-in-out, color 0.4s ease-in-out, box-shadow 0.4s ease-in-out, border 0.4s ease-in-out, transform 0.4s ease-in-out;
+  background: var(
+    --Test-SS-gradient,
+    radial-gradient(102.84% 135.6% at 0% 88.39%, #ed1ebb 0%, #ff0788 79.81%)
+  );
+  box-shadow: 0 -15px 47.6px 0 rgba(255, 7, 136, 0.5),
+    0 2px 4px -8px rgba(98, 8, 171, 0.08),
+    0 8px 16px -8px rgba(98, 8, 171, 0.25),
+    0 15px 40px -16px rgba(237, 30, 187, 0.5),
+    0 -20px 32px 0 rgba(79, 188, 255, 0.2) inset,
+    0 8px 24px 0 rgba(234, 52, 241, 0.25) inset;
+}
+.hero-button-one:hover {
+  background: var(--color-white);
+  color: var(--color-text);
+}
+.cbtn-hero-icon {
+  fill: var(--color-white);
+transition: background 0.4s ease-in-out, color 0.4s ease-in-out, box-shadow 0.4s ease-in-out, border 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+.hero-button-one:hover .cbtn-hero-icon {
+  fill: var(--color-text);
+  transform: translateX(6px);
+}
+
+.hero-button-two {
+  display: inline-flex;
+  padding: 16px 56px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 8px;
+  border: 2px solid var(--color-pink);
+transition: background 0.4s ease-in-out, color 0.4s ease-in-out, box-shadow 0.4s ease-in-out, border 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+.hero-button-two:hover {
+  background: var(
+    --Test-SS-gradient,
+    radial-gradient(102.84% 135.6% at 0% 88.39%, #ed1ebb 0%, #ff0788 79.81%)
+  );
+  box-shadow: 0 -15px 47.6px 0 rgba(255, 7, 136, 0.5),
+    0 2px 4px -8px rgba(98, 8, 171, 0.08),
+    0 8px 16px -8px rgba(98, 8, 171, 0.25),
+    0 15px 40px -16px rgba(237, 30, 187, 0.5),
+    0 -20px 32px 0 rgba(79, 188, 255, 0.2) inset,
+    0 8px 24px 0 rgba(234, 52, 241, 0.25) inset;
+  color: var(--color-white);
+}
+.pricing-pink {
+  display: flex;
+  padding: 16px 56px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: -0.36px;
+transition: background 0.4s ease-in-out, color 0.4s ease-in-out, box-shadow 0.4s ease-in-out, border 0.4s ease-in-out, transform 0.4s ease-in-out;
+  background: var(
+    --Test-SS-gradient,
+    radial-gradient(102.84% 135.6% at 0% 88.39%, #ed1ebb 0%, #ff0788 79.81%)
+  );
+  box-shadow: 0 -4px 40px 0 rgba(255, 7, 136, 0.2),
+    0 2px 4px -8px rgba(98, 8, 171, 0.08),
+    0 8px 16px -8px rgba(98, 8, 171, 0.25),
+    0 4px 40px -16px rgba(237, 30, 187, 0.2),
+    0 -20px 32px 0 rgba(79, 188, 255, 0.2) inset,
+    0 8px 24px 0 rgba(234, 52, 241, 0.25) inset;
+}
+.pricing-pink:hover{
+  background: var(--color-white);
+  color: var(--color-text);
+}
+/* === landing page end === */
