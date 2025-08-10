@@ -279,6 +279,12 @@
 }
 /* ========== Mobile: 670px and below ========== */
 @media (max-width: 670px) {
+  .profileText .row {
+    gap: 24px 0;
+  }
+  .profileForm {
+    gap: 24px 20px;
+  }
   .left-full-container-stream {
     padding-inline: 16px;
   }

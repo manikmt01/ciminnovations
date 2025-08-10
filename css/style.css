@@ -1,7 +1,7 @@
 /* === Root Variables === */
 :root {
-  --font-playwrite: "Playwrite US Trad", cursive;
-  --font-jakarta: "Plus Jakarta Sans", sans-serif;
+  --font-playwrite: 'Playwrite US Trad', cursive;
+  --font-jakarta: 'Plus Jakarta Sans', sans-serif;
 
   --color-primary: #fa64b2;
   --color-accent: #250124;
@@ -1014,14 +1014,14 @@ ul li {
 
 /* === dashboard start === */
 .body-admin {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   position: relative;
   min-height: 100vh;
   background-color: #f9f9fb;
 }
 .body-inter {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   position: relative;
   min-height: 100vh;
@@ -1287,7 +1287,7 @@ aside .offcanvas-body {
   margin-bottom: 24px;
 }
 .notifications .seenItem::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   left: 0;
@@ -2421,10 +2421,10 @@ aside .offcanvas-body {
   border-radius: 24px;
   background: rgba(81, 79, 79, 0.12);
   backdrop-filter: blur(3.5px);
-  color: #E3EFFA;
-text-shadow: 0 0 7.5px rgba(0, 0, 0, 0.20);
-font-size: 12px;
-font-weight: 500;
+  color: #e3effa;
+  text-shadow: 0 0 7.5px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  font-weight: 500;
 }
 .bg-darks {
   background-color: #111111;
@@ -3088,9 +3088,9 @@ font-weight: 500;
   line-height: 150%; /* 24px */
 }
 
-.right-full-container-top-stream-h3{
-  color: rgba(19, 19, 19, 0.70);
-font-size: 14px;
-font-weight: 400;
-padding-top: 10px;
+.right-full-container-top-stream-h3 {
+  color: rgba(19, 19, 19, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 10px;
 }
