@@ -2014,6 +2014,21 @@ aside .offcanvas-body {
   cursor: pointer;
 }
 
+.stream-tabs-btn:hover {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  border: 0.4px solid #8dffff;
+  background: #e3ffff;
+  color: #008b8b;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
 .stream-tabs-btn.active-stream {
   display: flex;
   padding: 10px;
@@ -3077,4 +3092,13 @@ aside .offcanvas-body {
   font-size: 14px;
   font-weight: 400;
   padding-top: 10px;
+}
+.custom-tab-item {
+  display: none;
+}
+.custom-tab-item.active {
+  display: block;
+}
+.left-full-container-stream.hundred-percent-height{
+  min-height: 100vh !important;
 }
