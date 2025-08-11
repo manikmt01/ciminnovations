@@ -66,6 +66,15 @@
   .salvation .title {
     max-width: 100% !important;
   }
+  .zero-pad-right {
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+  }
+  .zero-pad-left {
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+  .profileText .row {
+    gap: 24px 0;
+  }
 }
 /* ========== Tablet:1199px ========== */
 @media (min-width: 1199.98px) {
