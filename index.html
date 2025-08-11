@@ -226,7 +226,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       </div>
       <div class="container-custom">
         <div class="row">
-          <div class="col">
+          <div class="col-12">
             <div class="audience-content">
               <h2>Audience‑Specific Use Cases</h2>
               <p>Worem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -314,7 +314,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                   </div>
                 </div>
               </div>
-              <div class="d-flex d-md-none flex-column gap-3 audience-list-two">
+              <div class="d-flex d-lg-none flex-column gap-3 audience-list-two">
                 <!-- 1 -->
                 <div class="audience-box aud-item-1">
                   <div class="audience-img">
@@ -1013,11 +1013,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <div class="offcanvas-body d-flex flex-column justify-content-center align-items-center text-center">
       <ul class="d-flex flex-column align-items-center justify-content-between menu-link">
         <li><a href="./index.html" class="cbtn">Home</a></li>
-        <li><a href="./about.html" class="cbtn">Features</a></li>
-        <li><a href="./contact.html" class="cbtn">Use Cases</a></li>
-        <li><a href="./contact.html" class="cbtn">Getting Started</a></li>
-        <li><a href="./contact.html" class="cbtn">Pricing</a></li>
-        <li><a href="./contact.html" class="cbtn">FAQs</a></li>
+        <li><a href="#landing-myspace" class="cbtn">Features</a></li>
+        <li><a href="#landing-audience" class="cbtn">Use Cases</a></li>
+        <li><a href="#landing-streamspace" class="cbtn">Getting Started</a></li>
+        <li><a href="#landing-pricing" class="cbtn">Pricing</a></li>
+        <li><a href="#landing-faq" class="cbtn">FAQs</a></li>
       </ul>
       <div class="d-flex w-100 pt-5 flex-column align-items-center gap-3">
         <a data-bs-toggle="modal" data-bs-target="#loginModal" class="cbtn-login w-100">Login</a>
@@ -1032,7 +1032,36 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"></script>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Offcanvas menu link click handler (anchors)
+      document.querySelectorAll('#fullscreenOffcanvas .menu-link a').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          const href = link.getAttribute('href');
+          if (href.startsWith('#')) {
+            e.preventDefault();
+            const offcanvasEl = document.getElementById('fullscreenOffcanvas');
+            const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+            if (offcanvas) offcanvas.hide();
+            setTimeout(function () {
+              const section = document.querySelector(href);
+              if (section) section.scrollIntoView({ behavior: 'smooth' });
+            }, 350);
+          }
+        });
+      });
 
+      // Offcanvas Login/Signup click handler
+      document.querySelectorAll('#fullscreenOffcanvas .cbtn-login, #fullscreenOffcanvas .cbtn-signup').forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+          const offcanvasEl = document.getElementById('fullscreenOffcanvas');
+          const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+          if (offcanvas) offcanvas.hide();
+          // Modal will open automatically by Bootstrap via data-bs-toggle
+        });
+      });
+    });
+  </script>
 
   <script>
     const images = [
@@ -1101,18 +1130,32 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
     //sliders
     document.addEventListener("DOMContentLoaded", function () {
       new Splide("#pricing-slider", {
-        autoplay: true,
-        perPage: 3.3,
-        fixedWidth: 360,
+        // autoplay: true,
+        perPage: 3,
+        padding: { right: '280px', left: 0 },
+        drag: 'free',
+        rewind: true,
+        speed: 600,
+        snap: true,
+        perMove: 1,
         arrows: false,
         pagination: false,
         drag: true,
+        gap: '20px',
         breakpoints: {
+          1399: {
+            padding: { right: '0px', left: 0 },
+          },
           992: {
             perPage: 2,
             fixedWidth: null,
+            padding: { right: '0px', left: 0 },
           },
           768: {
+            perPage: 2,
+            fixedWidth: null,
+          },
+          576: {
             perPage: 1,
             fixedWidth: null,
           },

@@ -115,6 +115,9 @@ ul li {
   color: var(--color-greiny);
   transition: all 0.3s ease;
 }
+.modal {
+  z-index: 99999;
+}
 .menu-link li a:hover {
   color: var(--color-pink);
 }
@@ -529,28 +532,7 @@ ul li {
 }
 
 /* Ensure splide itself has no default padding/margin that interferes with JS */
-.splide {
-  padding-left: 0; /* JS will handle left padding */
-  padding-right: 0; /* JS will handle right padding */
-  margin-right: 0 !important; /* Ensure no right margin */
-  overflow: visible; /* Allow slides to peek out if desired */
-}
 
-.splide__track {
-  overflow: visible; /* Ensure track allows slides to overflow for partial visibility */
-}
-
-.splide__list {
-  margin-right: 0 !important; /* No specific margin-right needed here, splide handles it */
-}
-
-.splide__slide {
-  padding: 10px; /* Padding for individual slides to create gap */
-}
-.splide__slide {
-  width: 100%;
-  max-width: 360px;
-}
 .pricing-box {
   display: flex;
 

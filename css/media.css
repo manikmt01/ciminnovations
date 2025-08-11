@@ -57,6 +57,11 @@
   bottom: 130px !important;
 }
 /*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 1000px) {
+  .audience-img img {
+    height: 260px !important;
+  }
+}
 @media (min-width: 576px) and (max-width: 767.98px) {
   .salvation .title {
     max-width: 100% !important;
@@ -240,6 +245,9 @@
 
 /* ========== fablet: 991px ========== */
 @media (max-width: 991.99px) {
+  .audience-list {
+    display: none;
+  }
   .full-height-container {
     grid-template-columns: 1fr 357px;
   }
@@ -279,6 +287,9 @@
 }
 /* ========== Mobile: 670px and below ========== */
 @media (max-width: 670px) {
+  .audience-text {
+    margin-top: 0px;
+  }
   .profileText .row {
     gap: 24px 0;
   }
